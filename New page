@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Hill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Star Hill</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#collections">Colecciones</a></li>
+                    <li><a href="#store-locator">Tiendas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenidos a Star Hill</h2>
+            <p>Descubre nuestra nueva colección de jeans estilo western.</p>
+            <img src="img/home-banner.jpg" alt="Star Hill Jeans">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Star Hill es una marca inspirada en los elementos de la estrella y las montañas típicas del estilo western, evocando Aguascalientes, México. Nuestra diseñadora, Erika Ibarra, combina su maestría en arte y doctorado en estudios socioculturales para crear piezas únicas.</p>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections">
+        <div class="container">
+            <h2>Colecciones</h2>
+            <div class="collection-item">
+                <img src="img/jeans1.jpg" alt="Jeans 1">
+                <p>Jean Modelo 1</p>
+            </div>
+            <div class="collection-item">
+                <img src="img/jeans2.jpg" alt="Jeans 2">
+                <p>Jean Modelo 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locator Section -->
+    <section id="store-locator">
+        <div class="container">
+            <h2>Localizador de Tiendas</h2>
+            <p>Encuentra nuestras tiendas en el mapa.</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Star Hill. Todos los derechos reservados.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.collection-item {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
